@@ -1,0 +1,16 @@
+PODS:
+  - ZHTabBarController (0.1.0)
+
+DEPENDENCIES:
+  - ZHTabBarController (from `../`)
+
+EXTERNAL SOURCES:
+  ZHTabBarController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZHTabBarController: 89ee392cd28df18fa2183d496678cb74861b4262
+
+PODFILE CHECKSUM: b874c13f918f643306014e2c0c0d927cdbb78a95
+
+COCOAPODS: 1.1.1

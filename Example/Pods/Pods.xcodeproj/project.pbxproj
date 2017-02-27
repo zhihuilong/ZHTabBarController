@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FB584A691BDAACA999F5EFC1DD91B1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		12531A5AE9488DA2186A0D8955A55060 /* ZHTabBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45CA84CCD6109AFCC66273ED563C48 /* ZHTabBarConfig.swift */; };
+		5B51528F0AAD29432EE20814ECAE9A31 /* ZHTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE42C0C70803B9BDB7FFF35BC0BB57B2 /* ZHTabBar.swift */; };
+		78951FAE448233C5BA5F2BC7E3503577 /* ZHTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 073C1E3CC109931BEB5B78B213016E77 /* ZHTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D3142790C158DF0068B0CF9EF64CA48 /* ZHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8C72B879117463A12BE17A5D3A884 /* ZHTabBarController.swift */; };
+		7E9C5189ACE20515B1FA9395E81F7EF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		954309F475EF8D4E62024EB3A628DAC2 /* ZHBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BA900A551907E825DB712F0A91C548 /* ZHBarItem.swift */; };
+		9B1245AA6B14116AA7DEF926D223D2A2 /* Pods-ZHTabBarController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054F4DBCE9BCB97A76E1248C241DC54 /* Pods-ZHTabBarController_Tests-dummy.m */; };
+		A71CE15B4FC351AEA5ACBED82F07E880 /* Pods-ZHTabBarController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA324CB64145E7FA67EBEF5A0C1837C2 /* Pods-ZHTabBarController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9A115C6E78C64289DEE48BACCA1741F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AFE0FFB3F0E1652BFA234613C1373B75 /* Pods-ZHTabBarController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07853A49E27ECFA886FBB8E434CA7979 /* Pods-ZHTabBarController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B83AA11C53CB2D4DEC8ACE6BC660D832 /* Pods-ZHTabBarController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A53E89A6617EDB13B09F9CC627B0483 /* Pods-ZHTabBarController_Example-dummy.m */; };
+		E82C91E5A25A2736FCCC20722627FF7B /* ZHTabBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B7C54A8A9F159DAF7327B433C795F /* ZHTabBarHelper.swift */; };
+		EA237EA7E83BE0DF0990F7587F18618F /* ZHTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AE7B43F7542C74A5D4A8B2AAB516D /* ZHTabBarController-dummy.m */; };
+		F3E6C2163B3D68D445C384C801F1E4F7 /* ZHAddTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A57CB4E41ACDC23B32D5FD18EA6DE6 /* ZHAddTabBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86C8C2DF973963A130CB07BE77667784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91DE801D906ED3B7553E2FE5512E3C8;
+			remoteInfo = ZHTabBarController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00BFDE9DB1AAE8815142DD26CA246121 /* Pods-ZHTabBarController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZHTabBarController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		02AC38ABA9624656D95CB201A3171808 /* ZHTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZHTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		04F00036544907BF751E8DCA7208B76D /* ZHTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZHTabBarController.framework; path = ZHTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		073C1E3CC109931BEB5B78B213016E77 /* ZHTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZHTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		07853A49E27ECFA886FBB8E434CA7979 /* Pods-ZHTabBarController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZHTabBarController_Example-umbrella.h"; sourceTree = "<group>"; };
+		0AD53AF7FB5254F6DC2E7057FE37AD7C /* Pods-ZHTabBarController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZHTabBarController_Example.modulemap"; sourceTree = "<group>"; };
+		0BF3872E345C2EEF603953465463B4D1 /* Pods-ZHTabBarController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZHTabBarController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		114FB2EE8A6940180A16D36614D69F7B /* Pods-ZHTabBarController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZHTabBarController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		14A57CB4E41ACDC23B32D5FD18EA6DE6 /* ZHAddTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHAddTabBar.swift; sourceTree = "<group>"; };
+		1A53E89A6617EDB13B09F9CC627B0483 /* Pods-ZHTabBarController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZHTabBarController_Example-dummy.m"; sourceTree = "<group>"; };
+		22BA900A551907E825DB712F0A91C548 /* ZHBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHBarItem.swift; sourceTree = "<group>"; };
+		49D8C72B879117463A12BE17A5D3A884 /* ZHTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHTabBarController.swift; sourceTree = "<group>"; };
+		5054F4DBCE9BCB97A76E1248C241DC54 /* Pods-ZHTabBarController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZHTabBarController_Tests-dummy.m"; sourceTree = "<group>"; };
+		50D828C5F6480CF25720283DB98E15DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B68740D94FCF873034ED7D8EFFF1E9 /* ZHTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZHTabBarController.xcconfig; sourceTree = "<group>"; };
+		66F54DF175E2ECCE8B360C4EA70F9212 /* Pods-ZHTabBarController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZHTabBarController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6B9AE7B43F7542C74A5D4A8B2AAB516D /* ZHTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZHTabBarController-dummy.m"; sourceTree = "<group>"; };
+		6E0101A87A98DD0214D7BF4F26DA9961 /* Pods-ZHTabBarController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZHTabBarController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		74ACC497ADD1388E6383D865CAB59CDE /* Pods-ZHTabBarController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZHTabBarController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		824BECD97B61930A2887B85C5875DA3D /* Pods-ZHTabBarController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZHTabBarController_Example-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		979A97041A9AC327610AE8EE4C4AF3AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C549989F6148979A30A96FA65F5F8DA /* Pods-ZHTabBarController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZHTabBarController_Tests.modulemap"; sourceTree = "<group>"; };
+		A2AF360059BDF1B6C19AFB8CB2520706 /* Pods-ZHTabBarController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZHTabBarController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2D816F8D11E941C090E5325C385F840 /* Pods_ZHTabBarController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZHTabBarController_Example.framework; path = "Pods-ZHTabBarController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED814A5223B86701662925EB5FC8B9E /* Pods-ZHTabBarController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZHTabBarController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C109885C884D8E6FDE086B0F8E539EE1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C13B7C54A8A9F159DAF7327B433C795F /* ZHTabBarHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHTabBarHelper.swift; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD7956E3708A14D619E223158F7F4CEF /* Pods-ZHTabBarController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZHTabBarController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D8EE424D6D58EBFD2F57D8616AEED28B /* Pods_ZHTabBarController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZHTabBarController_Tests.framework; path = "Pods-ZHTabBarController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE42C0C70803B9BDB7FFF35BC0BB57B2 /* ZHTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHTabBar.swift; sourceTree = "<group>"; };
+		E2A105B8497DACC6E2D9D3BF4F26FA36 /* ZHTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZHTabBarController.modulemap; sourceTree = "<group>"; };
+		EA324CB64145E7FA67EBEF5A0C1837C2 /* Pods-ZHTabBarController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZHTabBarController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		ECEDF366F620DBABCFCFDEEF53178073 /* Pods-ZHTabBarController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZHTabBarController_Tests-resources.sh"; sourceTree = "<group>"; };
+		F0BD05B7B19CB6E2584680E301BEEB96 /* Pods-ZHTabBarController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZHTabBarController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FD45CA84CCD6109AFCC66273ED563C48 /* ZHTabBarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHTabBarConfig.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38A7C89EF5BA02D293BBA069876B276C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB584A691BDAACA999F5EFC1DD91B1D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E615C2027778E9D6FFFCA971D9372C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A115C6E78C64289DEE48BACCA1741F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFAA1C224509F17B0C5B2A085812CCD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E9C5189ACE20515B1FA9395E81F7EF2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04DECBDC14B34F86E4552EAAF2551E11 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A302B266FE9784C43087E5F71947C8F3 /* ZHTabBarController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		21B8D9A8526E83EB75E48E68E59C99A4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				14A57CB4E41ACDC23B32D5FD18EA6DE6 /* ZHAddTabBar.swift */,
+				22BA900A551907E825DB712F0A91C548 /* ZHBarItem.swift */,
+				DE42C0C70803B9BDB7FFF35BC0BB57B2 /* ZHTabBar.swift */,
+				FD45CA84CCD6109AFCC66273ED563C48 /* ZHTabBarConfig.swift */,
+				49D8C72B879117463A12BE17A5D3A884 /* ZHTabBarController.swift */,
+				C13B7C54A8A9F159DAF7327B433C795F /* ZHTabBarHelper.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2AA8CBEA0A6DA570109433CB8A1F1BD6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C109885C884D8E6FDE086B0F8E539EE1 /* Info.plist */,
+				E2A105B8497DACC6E2D9D3BF4F26FA36 /* ZHTabBarController.modulemap */,
+				65B68740D94FCF873034ED7D8EFFF1E9 /* ZHTabBarController.xcconfig */,
+				6B9AE7B43F7542C74A5D4A8B2AAB516D /* ZHTabBarController-dummy.m */,
+				02AC38ABA9624656D95CB201A3171808 /* ZHTabBarController-prefix.pch */,
+				073C1E3CC109931BEB5B78B213016E77 /* ZHTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZHTabBarController";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				04DECBDC14B34F86E4552EAAF2551E11 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7EE1A56B8349E32FAD6B753D52538A2E /* Products */,
+				EB3D257B5EE4F5D60FA69F5432A116A5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7EE1A56B8349E32FAD6B753D52538A2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2D816F8D11E941C090E5325C385F840 /* Pods_ZHTabBarController_Example.framework */,
+				D8EE424D6D58EBFD2F57D8616AEED28B /* Pods_ZHTabBarController_Tests.framework */,
+				04F00036544907BF751E8DCA7208B76D /* ZHTabBarController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A302B266FE9784C43087E5F71947C8F3 /* ZHTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				2AA8CBEA0A6DA570109433CB8A1F1BD6 /* Support Files */,
+				C4EA7933125C31DF85BE1C636B4B854E /* ZHTabBarController */,
+			);
+			name = ZHTabBarController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4EA7933125C31DF85BE1C636B4B854E /* ZHTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				21B8D9A8526E83EB75E48E68E59C99A4 /* Classes */,
+			);
+			name = ZHTabBarController;
+			path = ZHTabBarController;
+			sourceTree = "<group>";
+		};
+		D15E4E29CE52F9ED011106750FBD8D15 /* Pods-ZHTabBarController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				979A97041A9AC327610AE8EE4C4AF3AE /* Info.plist */,
+				9C549989F6148979A30A96FA65F5F8DA /* Pods-ZHTabBarController_Tests.modulemap */,
+				AED814A5223B86701662925EB5FC8B9E /* Pods-ZHTabBarController_Tests-acknowledgements.markdown */,
+				74ACC497ADD1388E6383D865CAB59CDE /* Pods-ZHTabBarController_Tests-acknowledgements.plist */,
+				5054F4DBCE9BCB97A76E1248C241DC54 /* Pods-ZHTabBarController_Tests-dummy.m */,
+				6E0101A87A98DD0214D7BF4F26DA9961 /* Pods-ZHTabBarController_Tests-frameworks.sh */,
+				ECEDF366F620DBABCFCFDEEF53178073 /* Pods-ZHTabBarController_Tests-resources.sh */,
+				EA324CB64145E7FA67EBEF5A0C1837C2 /* Pods-ZHTabBarController_Tests-umbrella.h */,
+				A2AF360059BDF1B6C19AFB8CB2520706 /* Pods-ZHTabBarController_Tests.debug.xcconfig */,
+				114FB2EE8A6940180A16D36614D69F7B /* Pods-ZHTabBarController_Tests.release.xcconfig */,
+			);
+			name = "Pods-ZHTabBarController_Tests";
+			path = "Target Support Files/Pods-ZHTabBarController_Tests";
+			sourceTree = "<group>";
+		};
+		D22530B1D5B4DCAF94B9710D3074BE08 /* Pods-ZHTabBarController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				50D828C5F6480CF25720283DB98E15DC /* Info.plist */,
+				0AD53AF7FB5254F6DC2E7057FE37AD7C /* Pods-ZHTabBarController_Example.modulemap */,
+				00BFDE9DB1AAE8815142DD26CA246121 /* Pods-ZHTabBarController_Example-acknowledgements.markdown */,
+				CD7956E3708A14D619E223158F7F4CEF /* Pods-ZHTabBarController_Example-acknowledgements.plist */,
+				1A53E89A6617EDB13B09F9CC627B0483 /* Pods-ZHTabBarController_Example-dummy.m */,
+				66F54DF175E2ECCE8B360C4EA70F9212 /* Pods-ZHTabBarController_Example-frameworks.sh */,
+				824BECD97B61930A2887B85C5875DA3D /* Pods-ZHTabBarController_Example-resources.sh */,
+				07853A49E27ECFA886FBB8E434CA7979 /* Pods-ZHTabBarController_Example-umbrella.h */,
+				0BF3872E345C2EEF603953465463B4D1 /* Pods-ZHTabBarController_Example.debug.xcconfig */,
+				F0BD05B7B19CB6E2584680E301BEEB96 /* Pods-ZHTabBarController_Example.release.xcconfig */,
+			);
+			name = "Pods-ZHTabBarController_Example";
+			path = "Target Support Files/Pods-ZHTabBarController_Example";
+			sourceTree = "<group>";
+		};
+		EB3D257B5EE4F5D60FA69F5432A116A5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D22530B1D5B4DCAF94B9710D3074BE08 /* Pods-ZHTabBarController_Example */,
+				D15E4E29CE52F9ED011106750FBD8D15 /* Pods-ZHTabBarController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		190D767E3EB911F81EF474F2F2F26338 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE0FFB3F0E1652BFA234613C1373B75 /* Pods-ZHTabBarController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A29A9E9A84F50CD3D956BDA482D37F31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78951FAE448233C5BA5F2BC7E3503577 /* ZHTabBarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E48BB3C05DED42AE16EBF10931D6BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71CE15B4FC351AEA5ACBED82F07E880 /* Pods-ZHTabBarController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1FB37D43A724358C6A73F9D2F4BF5465 /* Pods-ZHTabBarController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06BDC01AEC3614008884774C7878AF0D /* Build configuration list for PBXNativeTarget "Pods-ZHTabBarController_Example" */;
+			buildPhases = (
+				26F49BB1647389EF5A78C3B7226CE7FF /* Sources */,
+				E615C2027778E9D6FFFCA971D9372C3A /* Frameworks */,
+				190D767E3EB911F81EF474F2F2F26338 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63D6980902E3E74F2733E7EC2502DF2D /* PBXTargetDependency */,
+			);
+			name = "Pods-ZHTabBarController_Example";
+			productName = "Pods-ZHTabBarController_Example";
+			productReference = A2D816F8D11E941C090E5325C385F840 /* Pods_ZHTabBarController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9C8A1F4E4DD2B8B2F8D0B4BDAB6B599 /* Pods-ZHTabBarController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42F8AE0C9B3962966C0DBBD10BCAE51 /* Build configuration list for PBXNativeTarget "Pods-ZHTabBarController_Tests" */;
+			buildPhases = (
+				37545D0A36B11DB93BB86902B7F35FDE /* Sources */,
+				FFAA1C224509F17B0C5B2A085812CCD1 /* Frameworks */,
+				D3E48BB3C05DED42AE16EBF10931D6BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ZHTabBarController_Tests";
+			productName = "Pods-ZHTabBarController_Tests";
+			productReference = D8EE424D6D58EBFD2F57D8616AEED28B /* Pods_ZHTabBarController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E91DE801D906ED3B7553E2FE5512E3C8 /* ZHTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F211951079D534B6456FB5F123D2C32B /* Build configuration list for PBXNativeTarget "ZHTabBarController" */;
+			buildPhases = (
+				8D6D15E98AB830227233E99DEB72B074 /* Sources */,
+				38A7C89EF5BA02D293BBA069876B276C /* Frameworks */,
+				A29A9E9A84F50CD3D956BDA482D37F31 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZHTabBarController;
+			productName = ZHTabBarController;
+			productReference = 04F00036544907BF751E8DCA7208B76D /* ZHTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7EE1A56B8349E32FAD6B753D52538A2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FB37D43A724358C6A73F9D2F4BF5465 /* Pods-ZHTabBarController_Example */,
+				D9C8A1F4E4DD2B8B2F8D0B4BDAB6B599 /* Pods-ZHTabBarController_Tests */,
+				E91DE801D906ED3B7553E2FE5512E3C8 /* ZHTabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26F49BB1647389EF5A78C3B7226CE7FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B83AA11C53CB2D4DEC8ACE6BC660D832 /* Pods-ZHTabBarController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37545D0A36B11DB93BB86902B7F35FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1245AA6B14116AA7DEF926D223D2A2 /* Pods-ZHTabBarController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D6D15E98AB830227233E99DEB72B074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E6C2163B3D68D445C384C801F1E4F7 /* ZHAddTabBar.swift in Sources */,
+				954309F475EF8D4E62024EB3A628DAC2 /* ZHBarItem.swift in Sources */,
+				5B51528F0AAD29432EE20814ECAE9A31 /* ZHTabBar.swift in Sources */,
+				12531A5AE9488DA2186A0D8955A55060 /* ZHTabBarConfig.swift in Sources */,
+				EA237EA7E83BE0DF0990F7587F18618F /* ZHTabBarController-dummy.m in Sources */,
+				7D3142790C158DF0068B0CF9EF64CA48 /* ZHTabBarController.swift in Sources */,
+				E82C91E5A25A2736FCCC20722627FF7B /* ZHTabBarHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63D6980902E3E74F2733E7EC2502DF2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZHTabBarController;
+			target = E91DE801D906ED3B7553E2FE5512E3C8 /* ZHTabBarController */;
+			targetProxy = 86C8C2DF973963A130CB07BE77667784 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05717D06711ADD55C825682A636CF8EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF3872E345C2EEF603953465463B4D1 /* Pods-ZHTabBarController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZHTabBarController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZHTabBarController_Example/Pods-ZHTabBarController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZHTabBarController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		273102AA88C870988A82FF3129D463BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65B68740D94FCF873034ED7D8EFFF1E9 /* ZHTabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZHTabBarController/ZHTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZHTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZHTabBarController/ZHTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ZHTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2CF9986106EC411BB8988D1797E663AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0BD05B7B19CB6E2584680E301BEEB96 /* Pods-ZHTabBarController_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZHTabBarController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZHTabBarController_Example/Pods-ZHTabBarController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZHTabBarController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6174796B79E8DDEE0DD67088756A60C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2AF360059BDF1B6C19AFB8CB2520706 /* Pods-ZHTabBarController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZHTabBarController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZHTabBarController_Tests/Pods-ZHTabBarController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZHTabBarController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD2FDD6BF805744DC16197C7311021B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65B68740D94FCF873034ED7D8EFFF1E9 /* ZHTabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZHTabBarController/ZHTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZHTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZHTabBarController/ZHTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ZHTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B599875A7ABCA54E33566A209D57038C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114FB2EE8A6940180A16D36614D69F7B /* Pods-ZHTabBarController_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZHTabBarController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZHTabBarController_Tests/Pods-ZHTabBarController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZHTabBarController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06BDC01AEC3614008884774C7878AF0D /* Build configuration list for PBXNativeTarget "Pods-ZHTabBarController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05717D06711ADD55C825682A636CF8EA /* Debug */,
+				2CF9986106EC411BB8988D1797E663AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42F8AE0C9B3962966C0DBBD10BCAE51 /* Build configuration list for PBXNativeTarget "Pods-ZHTabBarController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6174796B79E8DDEE0DD67088756A60C1 /* Debug */,
+				B599875A7ABCA54E33566A209D57038C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F211951079D534B6456FB5F123D2C32B /* Build configuration list for PBXNativeTarget "ZHTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD2FDD6BF805744DC16197C7311021B3 /* Debug */,
+				273102AA88C870988A82FF3129D463BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_ZHTabBarController_Example {
+  umbrella header "Pods-ZHTabBarController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

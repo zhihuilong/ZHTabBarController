@@ -5,11 +5,26 @@
 [![License](https://img.shields.io/cocoapods/l/ZHTabBarController.svg?style=flat)](http://cocoapods.org/pods/ZHTabBarController)
 [![Platform](https://img.shields.io/cocoapods/p/ZHTabBarController.svg?style=flat)](http://cocoapods.org/pods/ZHTabBarController)
 
-## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+An alternative for UITabBarController，which support all kinds of Custom TabBarController.
+
+## What it look like 
+
+Icon & Title:
+
+![图片名](https://raw.githubusercontent.com/longzhihui/XHTabBarController/master/ScreenShot/01.png)
+
+Icon without Title:
+
+![图片名](https://raw.githubusercontent.com/longzhihui/XHTabBarController/master/ScreenShot/02.png)
+
+Center Button:
+
+![图片名](https://raw.githubusercontent.com/longzhihui/XHTabBarController/master/ScreenShot/03.png)
 
 ## Requirements
+
+Compatible with Xcode 8.2 / Swift 3.0
 
 ## Installation
 
@@ -22,7 +37,7 @@ pod "ZHTabBarController"
 
 ## Author
 
-longzhihui, zhihui.me@gmail.com
+Zhihui, zhihui.me@gmail.com
 
 ## License
 

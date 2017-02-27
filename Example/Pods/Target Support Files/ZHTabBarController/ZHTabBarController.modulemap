@@ -1,0 +1,6 @@
+framework module ZHTabBarController {
+  umbrella header "ZHTabBarController-umbrella.h"
+
+  export *
+  module * { export * }
+}
