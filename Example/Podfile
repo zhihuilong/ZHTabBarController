@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZHTabBarController_Example' do
+  pod 'ZHTabBarController', :path => '../'
+
+  target 'ZHTabBarController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
