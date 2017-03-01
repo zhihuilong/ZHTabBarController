@@ -66,7 +66,6 @@ public class ZHTabBar: UIView {
         self.frame = CGRect(x: 0, y: kViewHeight-ZHTabBarHeight, width: kViewWidth, height: ZHTabBarHeight)
     }
     
-    //public API：添加item
     func addBaritem(_ icon:String,title:String) {
         let item = ZHBarItem()
         addSubview(item)

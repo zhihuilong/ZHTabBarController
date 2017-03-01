@@ -8,7 +8,7 @@
 
 An alternative for UITabBarController，which support all kinds of Custom TabBarController.
 
-## What it look like 
+<!--## What it look like 
 
 Icon & Title:
 
@@ -20,7 +20,7 @@ Icon without Title:
 
 Center Button:
 
-![图片名](https://raw.githubusercontent.com/longzhihui/XHTabBarController/master/ScreenShot/03.png)
+![图片名](https://raw.githubusercontent.com/longzhihui/XHTabBarController/master/ScreenShot/03.png)-->
 
 ## Requirements
 
