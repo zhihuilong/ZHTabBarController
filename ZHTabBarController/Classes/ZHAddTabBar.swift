@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ZHAddTabBar: ZHTabBar {
+public final class ZHAddTabBar: ZHTabBar {
     fileprivate let centerBtn = UIImageView()
     var btnClickBlock:(() -> Void)?
     

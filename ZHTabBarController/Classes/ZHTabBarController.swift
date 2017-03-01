@@ -8,12 +8,12 @@
 
 import UIKit
 
-public protocol ZHTabBarControllerProtocol {
+@objc public protocol ZHTabBarControllerProtocol {
     var childViewControllers: [UIViewController] { get }
     var itemIconTitleDictionary: [String: String] { get }
 }
 
-public class ZHTabBarController: UIViewController {
+public final class ZHTabBarController: UIViewController {
     
     public var delegate: ZHTabBarControllerProtocol!
     public var tabBarColor = UIColor.kColor(35, green: 41, blue: 44)

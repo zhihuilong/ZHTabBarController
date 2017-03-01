@@ -13,7 +13,7 @@ let ZHBarBackColor         = UIColor.kColor(19, green: 22, blue: 23)
 let ZHBarTitleColor        = UIColor.white
 let ZHBarSelectedColor     = UIColor.white
 
-public class ZHBarItem: UIButton {
+public final class ZHBarItem: UIButton {
     
     public var hasTitle: Bool = true
     
