@@ -1,6 +1,6 @@
 # ZHTabBarController
 
-[![CI Status](http://img.shields.io/travis/longzhihui/ZHTabBarController.svg?style=flat)](https://travis-ci.org/longzhihui/ZHTabBarController)
+[![CI Status](http://img.shields.io/travis/zhihuilong/ZHTabBarController.svg?style=flat)](https://travis-ci.org/zhihuilong/ZHTabBarController)
 [![Version](https://img.shields.io/cocoapods/v/ZHTabBarController.svg?style=flat)](http://cocoapods.org/pods/ZHTabBarController)
 [![License](https://img.shields.io/cocoapods/l/ZHTabBarController.svg?style=flat)](http://cocoapods.org/pods/ZHTabBarController)
 [![Platform](https://img.shields.io/cocoapods/p/ZHTabBarController.svg?style=flat)](http://cocoapods.org/pods/ZHTabBarController)
