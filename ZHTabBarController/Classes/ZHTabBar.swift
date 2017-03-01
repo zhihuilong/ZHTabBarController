@@ -7,6 +7,9 @@
 //
 
 import UIKit
+
+let ZHTabBarHeight:CGFloat = 50
+
 // FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
 // Consider refactoring the code to use the non-optional operators.
 fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
@@ -32,7 +35,7 @@ fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 }
 
 
-class ZHTabBar: UIView {
+public class ZHTabBar: UIView {
     fileprivate var currentItem:ZHBarItem?
     var itemClickBlock:((_ index:Int) -> Void)?
     
@@ -55,12 +58,11 @@ class ZHTabBar: UIView {
         super.init(frame: frame)
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     fileprivate func createUI() {
-        backgroundColor = ZHTabBarColor
         self.frame = CGRect(x: 0, y: kViewHeight-ZHTabBarHeight, width: kViewWidth, height: ZHTabBarHeight)
     }
     

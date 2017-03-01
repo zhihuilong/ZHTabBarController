@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FB584A691BDAACA999F5EFC1DD91B1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		12531A5AE9488DA2186A0D8955A55060 /* ZHTabBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45CA84CCD6109AFCC66273ED563C48 /* ZHTabBarConfig.swift */; };
-		5B51528F0AAD29432EE20814ECAE9A31 /* ZHTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE42C0C70803B9BDB7FFF35BC0BB57B2 /* ZHTabBar.swift */; };
+		08DCFD89C4BCC3DFBC2C69789A3F1848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		367D113CEBFF9F4DD2B50666A0DA7A30 /* ZHTabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B450E222657FFA0636FA84F675EC5A1D /* ZHTabBarExtension.swift */; };
+		39ABFB76A737303B2400EFB86FF6478D /* ZHBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473CD7AEF848928001481986C9C5E4D7 /* ZHBarItem.swift */; };
+		3A02632FAD02FF965DC7DFC5D8114AC0 /* ZHTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AE7B43F7542C74A5D4A8B2AAB516D /* ZHTabBarController-dummy.m */; };
+		46DAA8A60D2514C88067F789733916C7 /* ZHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD5208B1F96D2E307C277749FED4214 /* ZHTabBarController.swift */; };
 		78951FAE448233C5BA5F2BC7E3503577 /* ZHTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 073C1E3CC109931BEB5B78B213016E77 /* ZHTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D3142790C158DF0068B0CF9EF64CA48 /* ZHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8C72B879117463A12BE17A5D3A884 /* ZHTabBarController.swift */; };
-		7E9C5189ACE20515B1FA9395E81F7EF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		954309F475EF8D4E62024EB3A628DAC2 /* ZHBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BA900A551907E825DB712F0A91C548 /* ZHBarItem.swift */; };
+		7E9C5189ACE20515B1FA9395E81F7EF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		9B1245AA6B14116AA7DEF926D223D2A2 /* Pods-ZHTabBarController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5054F4DBCE9BCB97A76E1248C241DC54 /* Pods-ZHTabBarController_Tests-dummy.m */; };
+		A273DAFF2B55B25200C801D9FD6692A4 /* ZHAddTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27026EBBD08EC8E302FD8C6DBAA28CB /* ZHAddTabBar.swift */; };
 		A71CE15B4FC351AEA5ACBED82F07E880 /* Pods-ZHTabBarController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA324CB64145E7FA67EBEF5A0C1837C2 /* Pods-ZHTabBarController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9A115C6E78C64289DEE48BACCA1741F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A9A115C6E78C64289DEE48BACCA1741F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		AB96BA6F07921FF6925C2F1D2F3AEA48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
 		AFE0FFB3F0E1652BFA234613C1373B75 /* Pods-ZHTabBarController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07853A49E27ECFA886FBB8E434CA7979 /* Pods-ZHTabBarController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B83AA11C53CB2D4DEC8ACE6BC660D832 /* Pods-ZHTabBarController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A53E89A6617EDB13B09F9CC627B0483 /* Pods-ZHTabBarController_Example-dummy.m */; };
-		E82C91E5A25A2736FCCC20722627FF7B /* ZHTabBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B7C54A8A9F159DAF7327B433C795F /* ZHTabBarHelper.swift */; };
-		EA237EA7E83BE0DF0990F7587F18618F /* ZHTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AE7B43F7542C74A5D4A8B2AAB516D /* ZHTabBarController-dummy.m */; };
-		F3E6C2163B3D68D445C384C801F1E4F7 /* ZHAddTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A57CB4E41ACDC23B32D5FD18EA6DE6 /* ZHAddTabBar.swift */; };
+		DD249F947BEEB47F5BF4A70FD646E220 /* ZHTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52068703D32F3530E96C756A70D32544 /* ZHTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,43 +43,44 @@
 		0AD53AF7FB5254F6DC2E7057FE37AD7C /* Pods-ZHTabBarController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZHTabBarController_Example.modulemap"; sourceTree = "<group>"; };
 		0BF3872E345C2EEF603953465463B4D1 /* Pods-ZHTabBarController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZHTabBarController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		114FB2EE8A6940180A16D36614D69F7B /* Pods-ZHTabBarController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZHTabBarController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		14A57CB4E41ACDC23B32D5FD18EA6DE6 /* ZHAddTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHAddTabBar.swift; sourceTree = "<group>"; };
 		1A53E89A6617EDB13B09F9CC627B0483 /* Pods-ZHTabBarController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZHTabBarController_Example-dummy.m"; sourceTree = "<group>"; };
-		22BA900A551907E825DB712F0A91C548 /* ZHBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHBarItem.swift; sourceTree = "<group>"; };
-		49D8C72B879117463A12BE17A5D3A884 /* ZHTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHTabBarController.swift; sourceTree = "<group>"; };
+		473CD7AEF848928001481986C9C5E4D7 /* ZHBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHBarItem.swift; sourceTree = "<group>"; };
 		5054F4DBCE9BCB97A76E1248C241DC54 /* Pods-ZHTabBarController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZHTabBarController_Tests-dummy.m"; sourceTree = "<group>"; };
 		50D828C5F6480CF25720283DB98E15DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52068703D32F3530E96C756A70D32544 /* ZHTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHTabBar.swift; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		65B68740D94FCF873034ED7D8EFFF1E9 /* ZHTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZHTabBarController.xcconfig; sourceTree = "<group>"; };
 		66F54DF175E2ECCE8B360C4EA70F9212 /* Pods-ZHTabBarController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZHTabBarController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6B9AE7B43F7542C74A5D4A8B2AAB516D /* ZHTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZHTabBarController-dummy.m"; sourceTree = "<group>"; };
 		6E0101A87A98DD0214D7BF4F26DA9961 /* Pods-ZHTabBarController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZHTabBarController_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		74ACC497ADD1388E6383D865CAB59CDE /* Pods-ZHTabBarController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZHTabBarController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		824BECD97B61930A2887B85C5875DA3D /* Pods-ZHTabBarController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZHTabBarController_Example-resources.sh"; sourceTree = "<group>"; };
+		8BD5208B1F96D2E307C277749FED4214 /* ZHTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHTabBarController.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		979A97041A9AC327610AE8EE4C4AF3AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C549989F6148979A30A96FA65F5F8DA /* Pods-ZHTabBarController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZHTabBarController_Tests.modulemap"; sourceTree = "<group>"; };
 		A2AF360059BDF1B6C19AFB8CB2520706 /* Pods-ZHTabBarController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZHTabBarController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2D816F8D11E941C090E5325C385F840 /* Pods_ZHTabBarController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZHTabBarController_Example.framework; path = "Pods-ZHTabBarController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED814A5223B86701662925EB5FC8B9E /* Pods-ZHTabBarController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZHTabBarController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B450E222657FFA0636FA84F675EC5A1D /* ZHTabBarExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHTabBarExtension.swift; sourceTree = "<group>"; };
 		C109885C884D8E6FDE086B0F8E539EE1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C13B7C54A8A9F159DAF7327B433C795F /* ZHTabBarHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHTabBarHelper.swift; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CD7956E3708A14D619E223158F7F4CEF /* Pods-ZHTabBarController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZHTabBarController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D27026EBBD08EC8E302FD8C6DBAA28CB /* ZHAddTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHAddTabBar.swift; sourceTree = "<group>"; };
 		D8EE424D6D58EBFD2F57D8616AEED28B /* Pods_ZHTabBarController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZHTabBarController_Tests.framework; path = "Pods-ZHTabBarController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE42C0C70803B9BDB7FFF35BC0BB57B2 /* ZHTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHTabBar.swift; sourceTree = "<group>"; };
 		E2A105B8497DACC6E2D9D3BF4F26FA36 /* ZHTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZHTabBarController.modulemap; sourceTree = "<group>"; };
 		EA324CB64145E7FA67EBEF5A0C1837C2 /* Pods-ZHTabBarController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZHTabBarController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		ECEDF366F620DBABCFCFDEEF53178073 /* Pods-ZHTabBarController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZHTabBarController_Tests-resources.sh"; sourceTree = "<group>"; };
 		F0BD05B7B19CB6E2584680E301BEEB96 /* Pods-ZHTabBarController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZHTabBarController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FD45CA84CCD6109AFCC66273ED563C48 /* ZHTabBarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZHTabBarConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38A7C89EF5BA02D293BBA069876B276C /* Frameworks */ = {
+		CE800A2D1F9BCCA6E69DD91F66E91F14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FB584A691BDAACA999F5EFC1DD91B1D /* Foundation.framework in Frameworks */,
+				08DCFD89C4BCC3DFBC2C69789A3F1848 /* Foundation.framework in Frameworks */,
+				AB96BA6F07921FF6925C2F1D2F3AEA48 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,20 +111,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		21B8D9A8526E83EB75E48E68E59C99A4 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				14A57CB4E41ACDC23B32D5FD18EA6DE6 /* ZHAddTabBar.swift */,
-				22BA900A551907E825DB712F0A91C548 /* ZHBarItem.swift */,
-				DE42C0C70803B9BDB7FFF35BC0BB57B2 /* ZHTabBar.swift */,
-				FD45CA84CCD6109AFCC66273ED563C48 /* ZHTabBarConfig.swift */,
-				49D8C72B879117463A12BE17A5D3A884 /* ZHTabBarController.swift */,
-				C13B7C54A8A9F159DAF7327B433C795F /* ZHTabBarHelper.swift */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		2AA8CBEA0A6DA570109433CB8A1F1BD6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,12 +125,12 @@
 			path = "Example/Pods/Target Support Files/ZHTabBarController";
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -151,7 +138,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				04DECBDC14B34F86E4552EAAF2551E11 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				7EE1A56B8349E32FAD6B753D52538A2E /* Products */,
 				EB3D257B5EE4F5D60FA69F5432A116A5 /* Targets Support Files */,
 			);
@@ -171,24 +158,16 @@
 			isa = PBXGroup;
 			children = (
 				2AA8CBEA0A6DA570109433CB8A1F1BD6 /* Support Files */,
-				C4EA7933125C31DF85BE1C636B4B854E /* ZHTabBarController */,
+				B2058371D35009DC9090E73F7BBF2D84 /* ZHTabBarController */,
 			);
 			name = ZHTabBarController;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		B2058371D35009DC9090E73F7BBF2D84 /* ZHTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C4EA7933125C31DF85BE1C636B4B854E /* ZHTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				21B8D9A8526E83EB75E48E68E59C99A4 /* Classes */,
+				E185AD1F11331BEF6B7E5A124F963409 /* Classes */,
 			);
 			name = ZHTabBarController;
 			path = ZHTabBarController;
@@ -228,6 +207,28 @@
 			);
 			name = "Pods-ZHTabBarController_Example";
 			path = "Target Support Files/Pods-ZHTabBarController_Example";
+			sourceTree = "<group>";
+		};
+		E185AD1F11331BEF6B7E5A124F963409 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D27026EBBD08EC8E302FD8C6DBAA28CB /* ZHAddTabBar.swift */,
+				473CD7AEF848928001481986C9C5E4D7 /* ZHBarItem.swift */,
+				52068703D32F3530E96C756A70D32544 /* ZHTabBar.swift */,
+				8BD5208B1F96D2E307C277749FED4214 /* ZHTabBarController.swift */,
+				B450E222657FFA0636FA84F675EC5A1D /* ZHTabBarExtension.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		EB3D257B5EE4F5D60FA69F5432A116A5 /* Targets Support Files */ = {
@@ -308,8 +309,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F211951079D534B6456FB5F123D2C32B /* Build configuration list for PBXNativeTarget "ZHTabBarController" */;
 			buildPhases = (
-				8D6D15E98AB830227233E99DEB72B074 /* Sources */,
-				38A7C89EF5BA02D293BBA069876B276C /* Frameworks */,
+				10D19B69725282026E77BF407671ABF8 /* Sources */,
+				CE800A2D1F9BCCA6E69DD91F66E91F14 /* Frameworks */,
 				A29A9E9A84F50CD3D956BDA482D37F31 /* Headers */,
 			);
 			buildRules = (
@@ -350,6 +351,19 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		10D19B69725282026E77BF407671ABF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A273DAFF2B55B25200C801D9FD6692A4 /* ZHAddTabBar.swift in Sources */,
+				39ABFB76A737303B2400EFB86FF6478D /* ZHBarItem.swift in Sources */,
+				DD249F947BEEB47F5BF4A70FD646E220 /* ZHTabBar.swift in Sources */,
+				3A02632FAD02FF965DC7DFC5D8114AC0 /* ZHTabBarController-dummy.m in Sources */,
+				46DAA8A60D2514C88067F789733916C7 /* ZHTabBarController.swift in Sources */,
+				367D113CEBFF9F4DD2B50666A0DA7A30 /* ZHTabBarExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26F49BB1647389EF5A78C3B7226CE7FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,20 +377,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B1245AA6B14116AA7DEF926D223D2A2 /* Pods-ZHTabBarController_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D6D15E98AB830227233E99DEB72B074 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3E6C2163B3D68D445C384C801F1E4F7 /* ZHAddTabBar.swift in Sources */,
-				954309F475EF8D4E62024EB3A628DAC2 /* ZHBarItem.swift in Sources */,
-				5B51528F0AAD29432EE20814ECAE9A31 /* ZHTabBar.swift in Sources */,
-				12531A5AE9488DA2186A0D8955A55060 /* ZHTabBarConfig.swift in Sources */,
-				EA237EA7E83BE0DF0990F7587F18618F /* ZHTabBarController-dummy.m in Sources */,
-				7D3142790C158DF0068B0CF9EF64CA48 /* ZHTabBarController.swift in Sources */,
-				E82C91E5A25A2736FCCC20722627FF7B /* ZHTabBarHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

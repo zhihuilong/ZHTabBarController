@@ -8,15 +8,22 @@
 
 import UIKit
 
-class ZHBarItem: UIButton {
+let ZHBarFont              = UIFont.systemFont(ofSize: 11)
+let ZHBarBackColor         = UIColor.kColor(19, green: 22, blue: 23)
+let ZHBarTitleColor        = UIColor.white
+let ZHBarSelectedColor     = UIColor.white
+
+public class ZHBarItem: UIButton {
     
-    override var isHighlighted: Bool {
+    public var hasTitle: Bool = true
+    
+    fileprivate let imageRatio: CGFloat = 0.65
+    
+    public override var isHighlighted: Bool {
         get {
             return super.isHighlighted
         }
-        set {
-            
-        }
+        set {}
     }
 
     override init(frame: CGRect) {
@@ -31,13 +38,13 @@ class ZHBarItem: UIButton {
         adjustsImageWhenHighlighted = false
     }
 
-    required init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
-        if ZHHasTitle {
-            let titleY = contentRect.size.height * ZHImageRatio 
+    public override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
+        if hasTitle {
+            let titleY = contentRect.size.height * imageRatio
             let titleHeight = contentRect.size.height - titleY
             return CGRect(x: 0, y: titleY, width: contentRect.size.width, height: titleHeight)
         } else {
@@ -45,10 +52,10 @@ class ZHBarItem: UIButton {
         }
     }
     
-    override func imageRect(forContentRect contentRect: CGRect) -> CGRect {
-        if ZHHasTitle {
-            let y = contentRect.size.height * ZHImageRatio/5
-            return CGRect(x: 0, y: y+2, width: contentRect.size.width, height: contentRect.size.height * ZHImageRatio - y*2 )
+    public override func imageRect(forContentRect contentRect: CGRect) -> CGRect {
+        if hasTitle {
+            let y = contentRect.size.height * imageRatio/5.0
+            return CGRect(x: 0, y: y+2, width: contentRect.size.width, height: contentRect.size.height * imageRatio - y*2 )
         } else {
             return CGRect(x: 0, y: contentRect.size.height/4, width: contentRect.size.width, height: contentRect.size.height/2)
         }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZHAddTabBar: ZHTabBar {
+public class ZHAddTabBar: ZHTabBar {
     fileprivate let centerBtn = UIImageView()
     var btnClickBlock:(() -> Void)?
     
@@ -24,9 +24,9 @@ class ZHAddTabBar: ZHTabBar {
         let width = frame.height
         centerBtn.isUserInteractionEnabled = true
         centerBtn.frame = CGRect(origin: CGPoint(x: (kViewWidth-width)/2, y: 0), size: CGSize(width: width, height: width))
-        centerBtn.backgroundColor = ZHCenterBtnColor
+        centerBtn.backgroundColor = UIColor.clear
         centerBtn.contentMode = UIViewContentMode.scaleAspectFit
-        centerBtn.image = ZHCenterBtnImage
+        centerBtn.image = UIImage(named: "centerBtn")
         centerBtn.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ZHAddTabBar.didTap)))
         addSubview(centerBtn)
         

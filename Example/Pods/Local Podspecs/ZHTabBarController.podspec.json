@@ -1,22 +1,22 @@
 {
   "name": "ZHTabBarController",
   "version": "0.1.0",
-  "summary": "A short description of ZHTabBarController.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/longzhihui/ZHTabBarController",
+  "summary": "An alternative for UITabBarController，which support all kinds of Custom TabBarController.",
+  "homepage": "https://github.com/zhihuilong/ZHTabBarController",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "longzhihui": "zhihui.me@gmail.com"
+    "zhihuilong": "zhihui.me@gmail.com"
   },
   "source": {
-    "git": "https://github.com/longzhihui/ZHTabBarController.git",
+    "git": "https://github.com/zhihuilong/ZHTabBarController.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ZHTabBarController/Classes/**/*"
+  "source_files": "ZHTabBarController/Classes/**/*",
+  "frameworks": "UIKit"
 }

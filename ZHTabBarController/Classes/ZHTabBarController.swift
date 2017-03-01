@@ -8,20 +8,37 @@
 
 import UIKit
 
-class ZHTabBarController: UIViewController{
+public protocol ZHTabBarControllerProtocol {
+    var childViewControllers: [UIViewController] { get }
+    var itemIconTitleDictionary: [String: String] { get }
+}
+
+public class ZHTabBarController: UIViewController {
+    
+    public var delegate: ZHTabBarControllerProtocol!
+    public var tabBarColor = UIColor.kColor(35, green: 41, blue: 44)
     
     fileprivate var selectedVC:UIViewController?
     fileprivate let tabBar = ZHTabBar()
     fileprivate let contentView = UIView()
-
-    override func viewDidLoad() {
+    
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
     
     fileprivate func setupUI() {
+        
+        for vc in delegate.childViewControllers {
+            addChildViewController(vc)
+        }
+        
+        // navbar
         navigationController?.navigationBar.isHidden = true
-        ZHTabBarHelper.create(self)
+        UINavigationBar.appearance().barTintColor = tabBarColor
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        
         addTabBar()
     }
     
@@ -29,9 +46,10 @@ class ZHTabBarController: UIViewController{
         view.addSubview(contentView)
         contentView.frame = CGRect(x: 0, y: 0, width: kViewWidth, height: kViewHeight - ZHTabBarHeight)
         view.addSubview(tabBar)
-        for i in 0 ..< ZHItemCount {
-            tabBar.addBaritem(ZHItemIcons[i], title: ZHItemTitles[i])
+        for (icon, title) in delegate.itemIconTitleDictionary {
+            tabBar.addBaritem(icon, title: title)
         }
+        tabBar.backgroundColor = tabBarColor
         tabBar.selectedIndex = 0
         tabBar.itemClickBlock = {(index:Int) in
             self.selectViewController(index)
