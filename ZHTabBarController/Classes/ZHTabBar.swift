@@ -10,45 +10,23 @@ import UIKit
 
 let ZHTabBarHeight:CGFloat = 50
 
-// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
-// Consider refactoring the code to use the non-optional operators.
-fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l < r
-  case (nil, _?):
-    return true
-  default:
-    return false
-  }
-}
-
-// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
-// Consider refactoring the code to use the non-optional operators.
-fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l >= r
-  default:
-    return !(lhs < rhs)
-  }
-}
-
-
 public class ZHTabBar: UIView {
-    fileprivate var currentItem:ZHBarItem?
-    var itemClickBlock:((_ index:Int) -> Void)?
     
-    var selectedIndex:Int? {
+    var titleColor = UIColor.white
+    var selectedTitleColor = UIColor.white
+    var itemClickBlock:((_ index:Int) -> Void)?
+    var selectedIndex:Int! {
         didSet {
             if selectedIndex < 0 || selectedIndex >= subviews.count {
                 return
             }
-            let item = subviews[selectedIndex!] as! ZHBarItem
+            let item = subviews[selectedIndex] as! ZHBarItem
             itemClick(item)
         }
     }
     
+    fileprivate var currentItem:ZHBarItem?
+
     init() {
         super.init(frame:CGRect.zero)
         createUI()
@@ -70,6 +48,8 @@ public class ZHTabBar: UIView {
         let item = ZHBarItem()
         addSubview(item)
         item.setTitle(title, for: UIControlState())
+        item.setTitleColor(titleColor, for: UIControlState.normal)
+        item.setTitleColor(selectedTitleColor, for: UIControlState.selected)
         item.setImage(UIImage(named: icon), for: UIControlState())
         item.setImage(UIImage(named: "\(icon)_highlight"), for: UIControlState.selected)
         item.addTarget(self, action: #selector(ZHTabBar.itemClick(_:)), for: UIControlEvents.touchDown)

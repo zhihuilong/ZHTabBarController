@@ -10,14 +10,10 @@ import UIKit
 
 let ZHBarFont              = UIFont.systemFont(ofSize: 11)
 let ZHBarBackColor         = UIColor.kColor(19, green: 22, blue: 23)
-let ZHBarTitleColor        = UIColor.white
-let ZHBarSelectedColor     = UIColor.white
 
 public final class ZHBarItem: UIButton {
     
     public var hasTitle: Bool = true
-    
-    fileprivate let imageRatio: CGFloat = 0.65
     
     public override var isHighlighted: Bool {
         get {
@@ -25,15 +21,16 @@ public final class ZHBarItem: UIButton {
         }
         set {}
     }
-
+    
+    fileprivate let imageRatio: CGFloat = 0.65
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         titleLabel?.textAlignment = NSTextAlignment.center
         titleLabel?.font = ZHBarFont
         titleLabel?.numberOfLines = 0
         titleLabel?.sizeToFit()
-        setTitleColor(ZHBarTitleColor, for: UIControlState())
-        setTitleColor(ZHBarSelectedColor, for: UIControlState.selected)
+        
         imageView?.contentMode = UIViewContentMode.scaleAspectFit
         adjustsImageWhenHighlighted = false
     }

@@ -44,12 +44,12 @@ pod "ZHTabBarController"
 
 Swift:
 ```
-    import ZHTabBarController
+import ZHTabBarController
 ```
 
 Obj-C:
 ```
-    @import ZHTabBarController;
+@import ZHTabBarController;
 ```
 
 2.Make sure your AppDelegate confirm ZHTabBarControllerProtocol and implement two computing variables.
@@ -63,13 +63,13 @@ Obj-C:
 
 ```
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = ZHTabBarController()
-        vc.delegate = self
-        window!.rootViewController = UINavigationController(rootViewController: vc)
-        window!.makeKeyAndVisible()
-        return true
-    }
+    window = UIWindow(frame: UIScreen.main.bounds)
+    let vc = ZHTabBarController()
+    vc.delegate = self
+    window!.rootViewController = UINavigationController(rootViewController: vc)
+    window!.makeKeyAndVisible()
+    return true
+}
 ```
 
 <!--## Customization-->
