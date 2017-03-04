@@ -5,7 +5,7 @@
 [![Version](https://img.shields.io/cocoapods/v/ZHTabBarController.svg?style=flat)](http://cocoapods.org/pods/ZHTabBarController)
 [![License](https://img.shields.io/cocoapods/l/ZHTabBarController.svg?style=flat)](http://cocoapods.org/pods/ZHTabBarController)
 [![Platform](https://img.shields.io/cocoapods/p/ZHTabBarController.svg?style=flat)](http://cocoapods.org/pods/ZHTabBarController)
-
+![Swift version](https://img.shields.io/badge/swift-3.0-orange.svg)
 
 An alternative for UITabBarController，which support all kinds of Custom TabBarController.
 

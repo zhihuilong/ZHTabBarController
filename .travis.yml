@@ -2,11 +2,10 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode8.0
+osx_image: xcode8
 language: objective-c
 xcode_scheme: ZHTabBarController-Example
-# xcode_sdk: iphonesimulator10.0
-# cache: cocoapods
+xcode_sdk: iphonesimulator10.0
 
 podfile: Example/Podfile
 
