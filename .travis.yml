@@ -4,13 +4,22 @@
 
 osx_image: xcode8.0
 language: objective-c
-xcode_sdk: iphonesimulator10.0
+xcode_scheme: ZHTabBarController-Example
+# xcode_sdk: iphonesimulator10.0
 # cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
-script:
-- set -o pipefail
-- xcodebuild -workspace Example/ZHTabBarController.xcworkspace -scheme ZHTabBarController-Example -destination "platform=iOS Simulator,name=iPhone 7" build-for-testing test | xcpretty
 
+podfile: Example/Podfile
+
+before_install:
+- gem install cocoapods
+- pod install --project-directory=Example
+
+script:
+- echo Check if the library described by the podspec can be built
+- pod lib lint --allow-warnings
+
+- echo Build the Demo apps and run tests
+- xctool -workspace Example/ZHTabBarController.xcworkspace -scheme ZHTabBarController-Example build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)

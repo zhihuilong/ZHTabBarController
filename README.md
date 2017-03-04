@@ -97,7 +97,7 @@ vc.itemSelectedTitleColor = UIColor.black
 
 - [ ] Travis CI
 - [ ] Code Coverage
-- [ ] Documentation
+- [ ] Cocoadocs
 - [ ] Snapshot
 - [ ] Support more styles
 - [ ] Carthage support
