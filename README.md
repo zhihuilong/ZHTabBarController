@@ -1,6 +1,7 @@
 # ZHTabBarController
 
 [![CI Status](http://img.shields.io/travis/zhihuilong/ZHTabBarController.svg?style=flat)](https://travis-ci.org/zhihuilong/ZHTabBarController)
+[![Coverage Status](https://coveralls.io/repos/github/zhihuilong/ZHTabBarController/badge.svg?branch=master)](https://coveralls.io/github/zhihuilong/ZHTabBarController?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/ZHTabBarController.svg?style=flat)](http://cocoapods.org/pods/ZHTabBarController)
 [![License](https://img.shields.io/cocoapods/l/ZHTabBarController.svg?style=flat)](http://cocoapods.org/pods/ZHTabBarController)
 [![Platform](https://img.shields.io/cocoapods/p/ZHTabBarController.svg?style=flat)](http://cocoapods.org/pods/ZHTabBarController)
@@ -55,8 +56,8 @@ Obj-C:
 2.Make sure your AppDelegate confirm ZHTabBarControllerProtocol and implement two computing variables.
 
 ```
-    var childViewControllers: [UIViewController] { get }
-    var itemIconTitleDictionary: [String: String] { get }
+var childViewControllers: [UIViewController] { get }
+var items: [ZHItemData] { get }
 ```
 
 3.Replace the default 'applicationDidFinishLaunching(_ application: UIApplication)' method.
@@ -72,8 +73,34 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-<!--## Customization-->
+## Customization
 
+
+You can customize following UI properties,
+
+1. tabBayStyle
+2. tabBarHeight
+3. tabBarColor
+4. tabBarItemTitleColor
+5. tabBarItemSelectedTitleColor
+6. ...
+
+
+```
+let vc = ZHTabBarController(style: .Default, tabBarHeight: 44)
+vc.tabBarColor = UIColor.white
+vc.itemTitleColor = UIColor.black
+vc.itemSelectedTitleColor = UIColor.black
+```
+
+## Todo
+
+- [ ] Travis CI
+- [ ] Code Coverage
+- [ ] Documentation
+- [ ] Snapshot
+- [ ] Support more styles
+- [ ] Carthage support
 
 ## Author
 

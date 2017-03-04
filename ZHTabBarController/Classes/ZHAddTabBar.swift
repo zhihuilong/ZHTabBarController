@@ -23,7 +23,7 @@ public final class ZHAddTabBar: ZHTabBar {
     override func adjustItemFrame() {
         let width = frame.height
         centerBtn.isUserInteractionEnabled = true
-        centerBtn.frame = CGRect(origin: CGPoint(x: (kViewWidth-width)/2, y: 0), size: CGSize(width: width, height: width))
+        centerBtn.frame = CGRect(origin: CGPoint(x: (SCREEN_WIDTH-width)/2, y: 0), size: CGSize(width: width, height: width))
         centerBtn.backgroundColor = UIColor.clear
         centerBtn.contentMode = UIViewContentMode.scaleAspectFit
         centerBtn.image = UIImage(named: "centerBtn")

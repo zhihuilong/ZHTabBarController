@@ -8,8 +8,6 @@
 
 import UIKit
 
-let ZHTabBarHeight:CGFloat = 50
-
 public class ZHTabBar: UIView {
     
     var titleColor = UIColor.white
@@ -25,34 +23,26 @@ public class ZHTabBar: UIView {
         }
     }
     
-    fileprivate var currentItem:ZHBarItem?
-
-    init() {
-        super.init(frame:CGRect.zero)
-        createUI()
-    }
+    fileprivate var currentItem: ZHBarItem?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(height: CGFloat) {
+        super.init(frame: CGRect(x: 0, y: SCREEN_HEIGHT-height, width: SCREEN_WIDTH, height: height))
     }
 
     required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    fileprivate func createUI() {
-        self.frame = CGRect(x: 0, y: kViewHeight-ZHTabBarHeight, width: kViewWidth, height: ZHTabBarHeight)
-    }
-    
-    func addBaritem(_ icon:String,title:String) {
-        let item = ZHBarItem()
-        addSubview(item)
-        item.setTitle(title, for: UIControlState())
-        item.setTitleColor(titleColor, for: UIControlState.normal)
-        item.setTitleColor(selectedTitleColor, for: UIControlState.selected)
-        item.setImage(UIImage(named: icon), for: UIControlState())
-        item.setImage(UIImage(named: "\(icon)_highlight"), for: UIControlState.selected)
-        item.addTarget(self, action: #selector(ZHTabBar.itemClick(_:)), for: UIControlEvents.touchDown)
+    func add(item item:ZHItemData,
+                 titleColor: UIColor,
+                 selectedTitleColor: UIColor) {
+        
+        let barItem = ZHBarItem(item: item)
+        addSubview(barItem)
+        
+        barItem.setTitleColor(titleColor, for: UIControlState.normal)
+        barItem.setTitleColor(selectedTitleColor, for: UIControlState.selected)
+        barItem.addTarget(self, action: #selector(ZHTabBar.itemClick(_:)), for: UIControlEvents.touchDown)
         adjustItemFrame()
     }
     
@@ -64,9 +54,7 @@ public class ZHTabBar: UIView {
             currentItem!.isSelected = false
         }
         item.isSelected = true
-        currentItem?.backgroundColor = UIColor.clear
         currentItem = item
-        currentItem?.backgroundColor = ZHBarBackColor
         if let tap = itemClickBlock {
             tap(item.tag)
         } else {
@@ -79,7 +67,7 @@ public class ZHTabBar: UIView {
         let itemWidth = frame.size.width / CGFloat(count)
         let itemHeight = frame.size.height
         for i in 0..<count {
-            let item = subviews[i] as! ZHBarItem
+            let item = subviews[i] 
             item.tag = i
             item.frame = CGRect(x: CGFloat(i) * itemWidth, y: 0, width: itemWidth, height: itemHeight)
         }

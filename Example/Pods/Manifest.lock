@@ -1,5 +1,5 @@
 PODS:
-  - ZHTabBarController (0.1.0)
+  - ZHTabBarController (0.1.2)
 
 DEPENDENCIES:
   - ZHTabBarController (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZHTabBarController: 855ac78e24b88e28f2aa31e7e48f64209f6272dd
+  ZHTabBarController: 5183cbe87c8cf7f00416205de41c9856dc94f1cc
 
 PODFILE CHECKSUM: a3ca24232ad886a08a7affebd67fa8473aac175f
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0
