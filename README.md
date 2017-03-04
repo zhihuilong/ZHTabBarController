@@ -95,7 +95,7 @@ vc.itemSelectedTitleColor = UIColor.black
 
 ## Todo
 
-- [ ] Travis CI
+- [x] Travis CI
 - [ ] Code Coverage
 - [ ] Cocoadocs
 - [ ] Snapshot
