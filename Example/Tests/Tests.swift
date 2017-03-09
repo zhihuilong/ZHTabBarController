@@ -15,8 +15,10 @@ class Tests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        XCTAssertNotNil(ZHTabBarController(), "ZHTabBarController is not nil")
+        XCTAssertNotNil(ZHTabBarController(style: .Default), "ZHTabBarController is not nil")
+        XCTAssertNotNil(ZHTabBarController(tabBarHeight: 44), "ZHTabBarController is not nil")
+        
     }
     
     func testPerformanceExample() {

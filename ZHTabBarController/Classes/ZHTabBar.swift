@@ -13,13 +13,14 @@ public class ZHTabBar: UIView {
     var titleColor = UIColor.white
     var selectedTitleColor = UIColor.white
     var itemClickBlock:((_ index:Int) -> Void)?
+    var allowSwitchTabClosure: ((_ index: Int) -> Bool)?
     var selectedIndex:Int! {
         didSet {
             if selectedIndex < 0 || selectedIndex >= subviews.count {
                 return
             }
             let item = subviews[selectedIndex] as! ZHBarItem
-            itemClick(item)
+            click(item: item)
         }
     }
     
@@ -42,14 +43,16 @@ public class ZHTabBar: UIView {
         
         barItem.setTitleColor(titleColor, for: UIControlState.normal)
         barItem.setTitleColor(selectedTitleColor, for: UIControlState.selected)
-        barItem.addTarget(self, action: #selector(ZHTabBar.itemClick(_:)), for: UIControlEvents.touchDown)
+        barItem.addTarget(self, action: #selector(ZHTabBar.click(item:)), for: UIControlEvents.touchDown)
         adjustItemFrame()
     }
     
-    func itemClick(_ item:ZHBarItem) {
-        if item == currentItem {
-            return
+    func click(item item:ZHBarItem) {
+        if let allowSwitch = allowSwitchTabClosure {
+            if !allowSwitch(item.tag) { return }
         }
+        
+        guard item != currentItem else { return }
         if currentItem != nil {
             currentItem!.isSelected = false
         }

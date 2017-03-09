@@ -22,6 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ZHTabBarControllerProtoco
         vc.itemTitleColor = UIColor.black
         vc.itemSelectedTitleColor = UIColor.black
         vc.delegate = self
+        vc.allowSwitchTabClosure = { index in
+            
+            if index == 3 {
+                self.window?.rootViewController?.present(UIViewController(), animated: true, completion: nil)
+                return false
+            }
+            return true
+        }
         window!.rootViewController = UINavigationController(rootViewController: vc)
         
         // navbar

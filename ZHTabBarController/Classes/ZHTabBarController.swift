@@ -37,6 +37,7 @@ public final class ZHTabBarController: UIViewController {
     public var tabBarColor = UIColor.white
     public var itemTitleColor = UIColor.black
     public var itemSelectedTitleColor = UIColor.black
+    public var allowSwitchTabClosure: ((_ index: Int) -> Bool)?
     
     fileprivate var selectedVC:UIViewController?
     fileprivate let contentView = UIView()
@@ -54,19 +55,16 @@ public final class ZHTabBarController: UIViewController {
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+}
+
+extension ZHTabBarController {
     public override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
-    }
-    
-    fileprivate func setupUI() {
         
         for vc in delegate.childViewControllers {
             addChildViewController(vc)
         }
         
-        // addTabBar
         view.addSubview(contentView)
         contentView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - tabBarHeight)
         
@@ -75,24 +73,18 @@ public final class ZHTabBarController: UIViewController {
             tabBar.add(item: item, titleColor: itemTitleColor, selectedTitleColor: itemSelectedTitleColor)
         }
         tabBar.backgroundColor = tabBarColor
-        tabBar.selectedIndex = 0
         tabBar.itemClickBlock = { index in
-            self.selectViewController(index)
+            let newVC = self.childViewControllers[index]
+            if newVC == self.selectedVC {
+                return
+            }
+            self.selectedVC?.view.removeFromSuperview()
+            self.contentView.addSubview(newVC.view)
+            newVC.view.frame = self.contentView.bounds
+            self.selectedVC = newVC
+            self.title = self.selectedVC!.title
         }
-        
-        // default select first controller
-        selectViewController(0)
-    }
-    
-    func selectViewController(_ index:Int) {
-        let newVC = childViewControllers[index]
-        if newVC == selectedVC {
-            return
-        }
-        selectedVC?.view.removeFromSuperview()
-        contentView.addSubview(newVC.view)
-        newVC.view.frame = contentView.bounds
-        selectedVC = newVC
-        title = selectedVC!.title
+        tabBar.allowSwitchTabClosure = allowSwitchTabClosure
+        tabBar.selectedIndex = 0 // default selection
     }
 }
