@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ZHTabBarController'
   s.module_name      = 'ZHTabBarController'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'An alternative for UITabBarController，which support all kinds of Custom TabBarController.'
   s.homepage         = 'https://github.com/zhihuilong/ZHTabBarController'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
