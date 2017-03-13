@@ -31,7 +31,7 @@ public final class ZHItemData: NSObject {
     }
 }
 
-public final class ZHTabBarController: UIViewController {
+public class ZHTabBarController: UIViewController {
     
     public var delegate: ZHTabBarControllerProtocol!
     public var tabBarColor = UIColor.white
@@ -85,6 +85,10 @@ extension ZHTabBarController {
             self.title = self.selectedVC!.title
         }
         tabBar.allowSwitchTabClosure = allowSwitchTabClosure
-        tabBar.selectedIndex = 0 // default selection
+        switchTab(AtIndex: 0) // default selection
+    }
+    
+    public func switchTab(AtIndex index: Int) {
+        tabBar.selectedIndex = index
     }
 }

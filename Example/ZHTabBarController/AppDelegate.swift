@@ -25,7 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ZHTabBarControllerProtoco
         vc.allowSwitchTabClosure = { index in
             
             if index == 3 {
-                self.window?.rootViewController?.present(UIViewController(), animated: true, completion: nil)
+                let present = UIViewController()
+                self.window?.rootViewController?.present(present, animated: true, completion: nil)
+                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) {
+                    present.dismiss(animated: true, completion: nil)
+                }
                 return false
             }
             return true
